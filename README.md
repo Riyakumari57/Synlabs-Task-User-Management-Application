@@ -21,3 +21,6 @@
 <p>Detail about a single user </p>
 
 ![image](https://github.com/Riyakumari57/User-Management-Application/assets/65845230/f74ee6f3-d492-4a93-a5a6-d78cb702e7d1)
+
+![image](https://github.com/Riyakumari57/Synlabs-Task-User-Management-Application/assets/65845230/a3e9fe5e-7d0d-471b-8076-197f61013d2c)
+
