@@ -4,6 +4,9 @@ import { AiFillEdit, AiFillDelete, AiOutlineUserAdd } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import Modalcontent from "./Modalcontent";
 import CreateUser from "./CreateUser";
+
+//Home page component which includes all the user data fetched from the api
+
 const Usermanage = () => {
   const [ loading , setLoading] = useState(false);
   const [users, setUsers] = useState([]);
@@ -11,6 +14,8 @@ const Usermanage = () => {
   const [createNewuser, setCreateNewuser] = useState(false);
   const [selectedUserId, setSelectedUserId] = useState(null);
 
+
+  //fetching data
   const getUsers = async () => {
     axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
       setUsers(response.data);
@@ -18,10 +23,12 @@ const Usermanage = () => {
     });
   };
 
+  //calling function in useEffect
   useEffect(() => {
     getUsers();
   }, []);
 
+  // Performing Delete data request to the api when deleten icon get clicked
   const deletePost = (userId) => {
     console.log(userId);
     axios
@@ -36,6 +43,9 @@ const Usermanage = () => {
       });
   };
 
+  
+  // setting modal value true when user will click edit icon 
+
   const editPost = (userId) => {
     console.log(userId);
     setModal(true);
@@ -44,8 +54,12 @@ const Usermanage = () => {
 
   return (
     <>
+      
+      {/* iff  will click on create user then createNewuser will set true and createuser componet will open*/ }
       {createNewuser && <CreateUser setCreateNewuser={setCreateNewuser} users={users} setUsers={setUsers} />}
-      {modal && (
+
+
+      {modal && ( // if modal is true then Modalcontent component will run which will display form on the screen
         <Modalcontent
           users={users}
           setUsers={setUsers}
@@ -93,7 +107,7 @@ const Usermanage = () => {
               ))
             ) : (
               <tr>
-                <td colSpan={6} className="text-center">
+                <td className="text-center">
                   No users found.
                 </td>
               </tr>

@@ -3,8 +3,7 @@ import { useState } from "react";
 
 const CreateUser = ({setCreateNewuser , users, setUsers}) => {
 
-      const newData = {
-        id:10,
+      const newData = { //Here we are creating a object which will get added in the exisiting data 
         name : "",
         email:"",
         address: {
@@ -12,26 +11,23 @@ const CreateUser = ({setCreateNewuser , users, setUsers}) => {
         },
       }
     const [inputData , setInputData] = useState(newData);
+    const [id, setId] = useState(10);
+    const newUser = {
+      ...inputData,
+      id: users.length + 1, // Increment the id based on the current number of users
+    };
 
-
-    const submitChanges = ()=>{
+    const submitChanges = ()=>{ //Performing Post request on the submittion of the form which will add the new user to the form
       setCreateNewuser(false);
-      axios.post("https://jsonplaceholder.typicode.com/users", inputData).
-      then((response)=>{
+      axios.post("https://jsonplaceholder.typicode.com/users", {...inputData ,
+    id}).then((response)=>{
         console.log(response);
 
-        setUsers([...users , inputData])
+        setUsers([...users, newUser]);
       }) .catch(error => {
         console.error("Error adding  user:", error);
     });
     }
-    
-    const incrementId = () => {
-      setInputData((prevInputData) => ({
-        ...prevInputData,
-        id: prevInputData.id + 1,
-      }));
-    };
 
   return (
      <>
@@ -40,7 +36,6 @@ const CreateUser = ({setCreateNewuser , users, setUsers}) => {
        
       <form onSubmit={(e) => {
         e.preventDefault();
-        incrementId();
         submitChanges()}}>
         <div className="section">
         <label>Name</label>
