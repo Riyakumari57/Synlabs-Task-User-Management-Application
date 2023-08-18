@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Adjust height as needed */
+  height: 200px; 
 }
 .newuser{
   display: flex;
@@ -97,27 +97,25 @@
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
 .record {
   padding: 20px 10px;
 }
 
 .table {
   min-width: 100%;
-  font-size: 0.8em; /* Adjust font size for smaller screens */
+  font-size: 0.8em; 
 }
 
 .table th,
 .table td {
-  padding: 10px 12px; /* Adjust padding for smaller screens */
+  padding: 12px 12px;
 }
 
-/* Center the 'No users found' message */
 .text-center {
   text-align: center;
 }
 
-/* Center buttons for smaller screens */
 .editRequest,
 .deleteRequest {
   text-align: center;
@@ -146,7 +144,7 @@
 
 @media screen and (max-width: 500px) {
   .modal-container {
-    width: 90%; /* Adjust the width for smaller screens */
+    width: 90%; 
     padding: 1rem;
     top: 40%;
   }
@@ -161,7 +159,7 @@
     text-align: center;
   }
 
-  /* Center buttons for smaller screens */
+ 
   .buttons {
     margin-left: auto;
     margin-right: auto;

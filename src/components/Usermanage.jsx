@@ -55,7 +55,7 @@ const Usermanage = () => {
 
   return (
     <>
-      {/* iff  will click on create user then createNewuser will set true and createuser componet will open*/ }
+      {/* iff  user will click on create user then createNewuser will set true and createuser componet will open*/ }
       {createNewuser && <CreateUser setCreateNewuser={setCreateNewuser} users={users} setUsers={setUsers} />}
 
 
