@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+}
+.newuser{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 44%;
+  cursor: pointer;
+  transition: 0.2s all;
+  font-size: 1.5rem;
+
+}
+.newuser p:hover {
+  font-weight:normal;
+  text-shadow:0px 0px 1px black;
+}
+
+.newuser i:hover {
+  font-weight:normal;
+  text-shadow:0px 0px 1px black;
+}
+
+.newuser:active{
+  transform: scale(0.8);
+}
+
+.record{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 40px 0;
+}
+
+
+
+.deleteRequest{
+  cursor: pointer;
+}
+.deleteRequest:active{
+  transform: scale(0.8);
+}
+
+.editRequest{
+  cursor: pointer;
+}
+.editRequest:active{
+  transform: scale(0.8);
+}
+.table {
+  margin-top: 1%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 600px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.table  thead tr {
+  background-color: #0d1117;
+  color: #ffffff;
+  text-align: left;
+}
+
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: #c1c2c4;
+}
+
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+.record {
+  padding: 20px 10px;
+}
+
+.table {
+  min-width: 100%;
+  font-size: 0.8em; /* Adjust font size for smaller screens */
+}
+
+.table th,
+.table td {
+  padding: 10px 12px; /* Adjust padding for smaller screens */
+}
+
+/* Center the 'No users found' message */
+.text-center {
+  text-align: center;
+}
+
+/* Center buttons for smaller screens */
+.editRequest,
+.deleteRequest {
+  text-align: center;
+}
+}
+
+.modal-wrapper{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #dddddd;
+}
+.modal-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  border: 1px solid black;
+  border-radius:1rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-container {
+    width: 90%; /* Adjust the width for smaller screens */
+    padding: 1rem;
+    top: 40%;
+  }
+  form input {
+    font-size: 0.9rem;
+  }
+  .section {
+    margin: 10px 0;
+  }
+  .modal-container form label,
+  .modal-container form input {
+    text-align: center;
+  }
+
+  /* Center buttons for smaller screens */
+  .buttons {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+form input{
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+.section{
+  margin: 20px;
+}
+
+.buttons{
+  display: flex;
+  margin-left: 65%;
+}
+.btn{
+  font-size: 1.1rem;
+  padding: .6rem .4rem;
+  margin: 4px;
+  color: white;
+  background-color: rgba(88, 110, 121, 0.744);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.btn:active{
+  transform: scale(0.5);
+}
+
