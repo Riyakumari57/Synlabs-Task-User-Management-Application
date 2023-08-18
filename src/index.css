@@ -9,6 +9,16 @@
   align-items: center;
   height: 200px; 
 }
+
+
+.record{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 40px 0;
+}
+
 .newuser{
   display: flex;
   justify-content: space-between;
@@ -29,30 +39,6 @@
 }
 
 .newuser:active{
-  transform: scale(0.8);
-}
-
-.record{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- padding: 40px 0;
-}
-
-
-
-.deleteRequest{
-  cursor: pointer;
-}
-.deleteRequest:active{
-  transform: scale(0.8);
-}
-
-.editRequest{
-  cursor: pointer;
-}
-.editRequest:active{
   transform: scale(0.8);
 }
 .table {
@@ -94,7 +80,19 @@
 }
 
 
+.deleteRequest{
+  cursor: pointer;
+}
+.deleteRequest:active{
+  transform: scale(0.8);
+}
 
+.editRequest{
+  cursor: pointer;
+}
+.editRequest:active{
+  transform: scale(0.8);
+}
 
 
 @media screen and (max-width: 450px) {
@@ -106,10 +104,17 @@
   min-width: 100%;
   font-size: 0.8em; 
 }
+.table th{
+  text-align: center;
+}
 
 .table th,
 .table td {
-  padding: 12px 12px;
+  padding: 8px 10px; 
+}
+
+.table .hide-on-small {
+  display: none;
 }
 
 .text-center {

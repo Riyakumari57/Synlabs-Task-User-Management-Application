@@ -55,7 +55,7 @@ const Usermanage = () => {
 
   return (
     <>
-      {/* iff  user will click on create user then createNewuser will set true and createuser componet will open*/ }
+      {/* if  user will click on create user then createNewuser will set true and createuser componet will open*/ }
       {createNewuser && <CreateUser setCreateNewuser={setCreateNewuser} users={users} setUsers={setUsers} />}
 
 
@@ -81,7 +81,7 @@ const Usermanage = () => {
               <th>SNo.</th>
               <th>Name</th>
               <th>Adress </th>
-              <th>email</th>
+              <th className="hide-on-small">email</th>
               <th>Edit</th>
               <th>Delete</th>
             </tr>
@@ -94,7 +94,7 @@ const Usermanage = () => {
                   <td>  <Link to={`/user/${user.id}`} style={{ textDecoration: 'none', color:"black" }} >{user.name} </Link></td>
                  
                   <td>{user.address.city}</td>
-                  <td>{user.email}</td>
+                  <td className="hide-on-small">{user.email}</td>
                   
                   <td onClick={() => editPost(user.id)} className="editRequest">
                     <AiFillEdit />
@@ -116,6 +116,7 @@ const Usermanage = () => {
             )}
           </tbody>
         </table>
+       
          ) : (
           <div className="loader">
             <Oval
@@ -130,7 +131,7 @@ const Usermanage = () => {
             />
           </div>
         )}
-      </div>
+       </div>
     </>
   );
 };
