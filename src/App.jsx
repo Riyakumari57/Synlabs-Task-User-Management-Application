@@ -1,15 +1,19 @@
-import 'react-loading-skeleton/dist/skeleton.css'
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import Usermanage from './components/Usermanage'
+import SingleUser from "./components/SingleUser";
 
 function App() {
 
   return (
     <>
-     <SkeletonTheme baseColor="#202020" highlightColor="#444">
-     <Usermanage/>
-     </SkeletonTheme>
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Usermanage />}></Route>
+          <Route path="user/:userId" element={<SingleUser />} />
+      </Routes>
+    </BrowserRouter>
+    {/* <Usermanage/> */}
     </>
   )
 }

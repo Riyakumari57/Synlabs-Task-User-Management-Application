@@ -1,3 +1,4 @@
+import {  Link } from "react-router-dom";
 import { Oval } from "react-loader-spinner";
 import axios from "axios";
 import { AiFillEdit, AiFillDelete, AiOutlineUserAdd } from "react-icons/ai";
@@ -54,7 +55,6 @@ const Usermanage = () => {
 
   return (
     <>
-      
       {/* iff  will click on create user then createNewuser will set true and createuser componet will open*/ }
       {createNewuser && <CreateUser setCreateNewuser={setCreateNewuser} users={users} setUsers={setUsers} />}
 
@@ -91,9 +91,11 @@ const Usermanage = () => {
               users.map((user) => (
                 <tr key={user.id}>
                   <td>{user.id}</td>
-                  <td>{user.name}</td>
+                  <td>  <Link to={`/user/${user.id}`} style={{ textDecoration: 'none', color:"black" }} >{user.name} </Link></td>
+                 
                   <td>{user.address.city}</td>
                   <td>{user.email}</td>
+                  
                   <td onClick={() => editPost(user.id)} className="editRequest">
                     <AiFillEdit />
                   </td>
