@@ -1,5 +1,5 @@
 # React + Vite
-# USER MANAGEMENT SYSTEM (CRUD) application in react .
+# USER MANAGEMENT SYSTEM (CRUD) application in react
 
 
 
