@@ -8,12 +8,20 @@
 https://github.com/Riyakumari57/Synlabs-Task-User-Management-Application/assets/65845230/7dbe525b-b3c8-443d-867b-af7c643e89dd
 
 # 👩‍💻 Technology used 
-<a href="https://react.dev/">React.js</a>
-<a href="https://v5.reactrouter.com/web/guides/quick-start">React Router</a>
-<a href="https://axios-http.com/docs/intro">Axios</a>
-<a href="https://www.npmjs.com/package/react-loader-spinner">React Loader Spinner</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+<ul>
+  <li><a href="https://react.dev/">React.js</a></li>
+  <li> <a href="https://v5.reactrouter.com/web/guides/quick-start">React Router</a></li>
+  <li><a href="https://axios-http.com/docs/intro">Axios</a></li>
+  <li><a href="https://www.npmjs.com/package/react-loader-spinner">React Loader Spinner</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+</ul>
+
+
+
+
+
+
 
 
 <!--![image](https://github.com/Riyakumari57/User-Management-Application/assets/65845230/2ec23fcf-7c41-4ada-bd61-34b5b2ff5d3c)
