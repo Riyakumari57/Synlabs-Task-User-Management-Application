@@ -17,10 +17,11 @@ https://github.com/Riyakumari57/Synlabs-Task-User-Management-Application/assets/
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
 </ul>
 
-
-
-
-
+# About
+Watching the video above and/or accessing the project online will help you understand the explanation!
+<p>This Project is a crud application made in react.js which fetches data of some users  from the
+  <a href="https://jsonplaceholder.typicode.com/users">api</a> in the table where you can delete any data by making DELETE request to the api , you can edit the existing data by making PUT request to the api or you can add new  datas by making POST request to the api .
+</p>
 
 
 
