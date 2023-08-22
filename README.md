@@ -1,5 +1,13 @@
 # React + Vite
 # USER MANAGEMENT SYSTEM (CRUD) application in react .
+
+
+
+
+
+https://github.com/Riyakumari57/Synlabs-Task-User-Management-Application/assets/65845230/7dbe525b-b3c8-443d-867b-af7c643e89dd
+
+
 ![image](https://github.com/Riyakumari57/User-Management-Application/assets/65845230/2ec23fcf-7c41-4ada-bd61-34b5b2ff5d3c)
 
 <p>Creating a new user by making POST request to the api</p>
